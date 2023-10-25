@@ -4,46 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
     <title>Calculator</title>
 </head>
-
 <body>
-
+<div class="display">
     <p class="js-calculation calculation"></p>
+</div>
     <p>
-        <button onclick=" updateCalculation('1'); ">1</button>
-        <button onclick=" updateCalculation('2'); ">2</button>
-        <button onclick=" updateCalculation('3'); ">3</button>
-        <button onclick=" updateCalculation(' + '); ">+</button>
+        <button class="number-button" onclick=" updateCalculation('1'); ">1</button>
+        <button class="number-button" onclick=" updateCalculation('2'); ">2</button>
+        <button class="number-button" onclick=" updateCalculation('3'); ">3</button>
+        <button class="math-button" onclick=" updateCalculation(' + '); ">+</button>
     </p>
 
     <p>
-        <button onclick=" updateCalculation('4'); ">4
+        <button class="number-button" onclick=" updateCalculation('4'); ">4
         </button>
-        <button onclick=" updateCalculation('5'); ">5</button>
-        <button onclick=" updateCalculation('6'); ">6</button>
-        <button onclick=" updateCalculation(' - '); ">-</button>
+        <button class="number-button" onclick=" updateCalculation('5'); ">5</button>
+        <button class="number-button" onclick=" updateCalculation('6'); ">6</button>
+        <button class="math-button" onclick=" updateCalculation(' - '); ">-</button>
     </p>
 
     <p>
-        <button onclick=" updateCalculation('7'); ">7
+        <button class="number-button" onclick=" updateCalculation('7'); ">7
         </button>
-        <button onclick=" updateCalculation('8'); ">8</button>
-        <button onclick=" updateCalculation('9'); ">9</button>
-        <button onclick=" updateCalculation(' * '); ">*</button>
+        <button class="number-button" onclick=" updateCalculation('8'); ">8</button>
+        <button class="number-button" onclick=" updateCalculation('9'); ">9</button>
+        <button class="math-button" onclick=" updateCalculation(' * '); ">*</button>
     </p>
 
     <p>
-        <button onclick=" updateCalculation('0'); ">0
+        <button class="number-button" onclick=" updateCalculation('0'); ">0
         </button>
-        <button onclick=" updateCalculation('.'); ">.</button>
-        <button onclick=" calculation = eval(calculation);
+        <button class="number-button" onclick=" updateCalculation('.'); ">.</button>
+        <button class="equal-button" onclick=" calculation = eval(calculation); displayCalculation();
         localStorage.setItem('calculation', calculation); ">=</button>
-        <button onclick=" updateCalculation(' / '); ">/</button>
+        <button class="math-button" onclick=" updateCalculation(' / '); ">/</button>
     </p>
 
     <p>
-        <button onclick=" calculation = ''; 
+        <button class="equal-button" onclick=" calculation = ''; displayCalculation();
         localStorage.setItem('calculation', calculation); console.log('cleared'); ">Clear</button>
     </p>
 
