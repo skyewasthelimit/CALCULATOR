@@ -39,7 +39,8 @@ p {
     font-size: 30px;
     font-weight: 550;
     background-color: #1b2127;
-    margin: 0 70vw 0 0;
+    width: 50%;
+    max-width: 310px;
 }
 
 .number-button {
