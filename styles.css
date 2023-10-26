@@ -39,6 +39,7 @@ p {
     font-size: 30px;
     font-weight: 550;
     background-color: #1b2127;
+    height: 2rem;
     width: 50%;
     max-width: 310px;
 }
